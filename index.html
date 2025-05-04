@@ -239,6 +239,18 @@
             </div>
         </aside>
     </main>
+    <!-- Popup Palette Start -->
+    <!-- Popup Palette End -->
+    <!-- Borderless Image Popup -->
+    <div id="imagePopupOverlay" class="image-popup-overlay" style="display:none;">
+      <div class="image-popup-aspect">
+        <img id="imagePopup" src="" alt="Popup" class="image-popup-img" />
+      </div>
+      <div class="image-popup-caption">
+        <span id="imagePopupText"></span>
+        <button id="imagePopupNextBtn" class="image-popup-next-btn">Next</button>
+      </div>
+    </div>
 </body>
 <script>
 const filterBar = document.getElementById('filterBar');
@@ -304,5 +316,75 @@ if (shortsScrollBtn && shortsList && shortsScrollLeftBtn) {
     // Initial check
     updateShortsScrollBtn();
 }
+
+function showImagePopup(src) {
+  const popup = document.getElementById('imagePopupOverlay');
+  const img = document.getElementById('imagePopup');
+  img.src = src;
+  popup.style.display = 'flex';
+}
+
+// Example: Show the popup on page load
+window.onload = function() {
+  showImagePopup('assets/your-image.jpg'); // Change to your image path
+};
+
+// Optional: Click anywhere to close the popup
+document.getElementById('imagePopupOverlay').onclick = function() {
+  this.style.display = 'none';
+};
+
+const popupImages = [
+  {
+    src: 'assets/onboard1.jpg',
+    text: "Welcome to Focus Mode! Stay distraction-free and boost your productivity."
+  },
+  {
+    src: 'assets/onboard2.jpg',
+    text: "Easily switch between videos and shorts. Enjoy a seamless viewing experience."
+  },
+  {
+    src: 'assets/onboard3.jpg',
+    text: "Ready to get started? Click continue to enjoy your upgraded YouTube experience!"
+  }
+];
+let popupIndex = 0;
+
+function updateImagePopup() {
+  document.getElementById('imagePopup').src = popupImages[popupIndex].src;
+  document.getElementById('imagePopupText').textContent = popupImages[popupIndex].text;
+  document.getElementById('imagePopupNextBtn').textContent =
+    (popupIndex === popupImages.length - 1) ? "Continue" : "Next";
+}
+
+function showImagePopupSequence() {
+  popupIndex = 0;
+  updateImagePopup();
+  document.getElementById('imagePopupOverlay').style.display = 'flex';
+}
+
+// Only the button advances/closes the popup
+document.getElementById('imagePopupNextBtn').onclick = function(event) {
+  event.stopPropagation(); // Prevent bubbling if button is inside overlay
+  if (popupIndex < popupImages.length - 1) {
+    popupIndex++;
+    updateImagePopup();
+  } else {
+    document.getElementById('imagePopupOverlay').style.display = 'none';
+  }
+};
+
+// Prevent overlay click from advancing/closing
+document.getElementById('imagePopupOverlay').onclick = function(e) {
+  // Only close if user clicks directly on the overlay (not on children)
+  if (e.target === this) {
+    // Do nothing, or optionally close if you want
+    // this.style.display = 'none';
+  }
+};
+
+window.onload = function() {
+  showImagePopupSequence();
+};
 </script>
 </html>
