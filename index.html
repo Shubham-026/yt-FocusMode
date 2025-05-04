@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Page Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="yt-header">
+        <div class="logo"> 
+            <span class="yt-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 24px; height: 24px; vertical-align: middle;"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z" fill="white"></path></svg>
+            </span>
+            <span class="yt-svg-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-svg_yt9" width="93" height="20" viewBox="0 0 93 20" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 93px; height: 20px; vertical-align: middle;">
+                <g>
+                  <path d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z" fill="#FF0033"></path>
+                  <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white"></path>
+                </g>
+                <g id="youtube-paths_yt9">
+                  <path d="M37.1384 18.8999V13.4399L40.6084 2.09994H38.0184L36.6984 7.24994C36.3984 8.42994 36.1284 9.65994 35.9284 10.7999H35.7684C35.6584 9.79994 35.3384 8.48994 35.0184 7.22994L33.7384 2.09994H31.1484L34.5684 13.4399V18.8999H37.1384Z" fill="white"></path>
+                  <path d="M44.1003 6.29994C41.0703 6.29994 40.0303 8.04994 40.0303 11.8199V13.6099C40.0303 16.9899 40.6803 19.1099 44.0403 19.1099C47.3503 19.1099 48.0603 17.0899 48.0603 13.6099V11.8199C48.0603 8.44994 47.3803 6.29994 44.1003 6.29994ZM45.3903 14.7199C45.3903 16.3599 45.1003 17.3899 44.0503 17.3899C43.0203 17.3899 42.7303 16.3499 42.7303 14.7199V10.6799C42.7303 9.27994 42.9303 8.02994 44.0503 8.02994C45.2303 8.02994 45.3903 9.34994 45.3903 10.6799V14.7199Z" fill="white"></path>
+                  <path d="M52.2713 19.0899C53.7313 19.0899 54.6413 18.4799 55.3913 17.3799H55.5013L55.6113 18.8999H57.6012V6.53994H54.9613V16.4699C54.6812 16.9599 54.0312 17.3199 53.4212 17.3199C52.6512 17.3199 52.4113 16.7099 52.4113 15.6899V6.53994H49.7812V15.8099C49.7812 17.8199 50.3613 19.0899 52.2713 19.0899Z" fill="white"></path>
+                  <path d="M62.8261 18.8999V4.14994H65.8661V2.09994H57.1761V4.14994H60.2161V18.8999H62.8261Z" fill="white"></path>
+                  <path d="M67.8728 19.0899C69.3328 19.0899 70.2428 18.4799 70.9928 17.3799H71.1028L71.2128 18.8999H73.2028V6.53994H70.5628V16.4699C70.2828 16.9599 69.6328 17.3199 69.0228 17.3199C68.2528 17.3199 68.0128 16.7099 68.0128 15.6899V6.53994H65.3828V15.8099C65.3828 17.8199 65.9628 19.0899 67.8728 19.0899Z" fill="white"></path>
+                  <path d="M80.6744 6.26994C79.3944 6.26994 78.4744 6.82994 77.8644 7.73994H77.7344C77.8144 6.53994 77.8744 5.51994 77.8744 4.70994V1.43994H75.3244L75.3144 12.1799L75.3244 18.8999H77.5444L77.7344 17.6999H77.8044C78.3944 18.5099 79.3044 19.0199 80.5144 19.0199C82.5244 19.0199 83.3844 17.2899 83.3844 13.6099V11.6999C83.3844 8.25994 82.9944 6.26994 80.6744 6.26994ZM80.7644 13.6099C80.7644 15.9099 80.4244 17.2799 79.3544 17.2799C78.8544 17.2799 78.1644 17.0399 77.8544 16.5899V9.23994C78.1244 8.53994 78.7244 8.02994 79.3944 8.02994C80.4744 8.02994 80.7644 9.33994 80.7644 11.7299V13.6099Z" fill="white"></path>
+                  <path d="M92.6517 11.4999C92.6517 8.51994 92.3517 6.30994 88.9217 6.30994C85.6917 6.30994 84.9717 8.45994 84.9717 11.6199V13.7899C84.9717 16.8699 85.6317 19.1099 88.8417 19.1099C91.3817 19.1099 92.6917 17.8399 92.5417 15.3799L90.2917 15.2599C90.2617 16.7799 89.9117 17.3999 88.9017 17.3999C87.6317 17.3999 87.5717 16.1899 87.5717 14.3899V13.5499H92.6517V11.4999ZM88.8617 7.96994C90.0817 7.96994 90.1717 9.11994 90.1717 11.0699V12.0799H87.5717V11.0699C87.5717 9.13994 87.6517 7.96994 88.8617 7.96994Z" fill="white"></path>
+                </g>
+              </svg>
+            </span>
+        </div>
+        <div class="search-group">
+        <div class="search-container">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 24px; height: 24px; vertical-align: middle;"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule="evenodd"></path></svg>
+            </button>
+        </div>
+        <button class="mic-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 24px; height: 24px; vertical-align: middle;"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z" fill="white"></path></svg>
+        </button>
+        </div>
+        <div class="user-actions">
+            <a href="focus.html" class="focus-icon-btn" title="Focus Mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="4" fill="#fff"/>
+                </svg>
+                <!-- <span class="sparkle sparkle1"></span>
+                <span class="sparkle sparkle2"></span>
+                <span class="sparkle sparkle3"></span>
+                <span class="sparkle sparkle4"></span>
+                <span class="sparkle sparkle5"></span> -->
+            </a>
+            <button class="create-btn" title="Create">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 24px; height: 24px;"><path d="M20 12h-8v8h-1v-8H3v-1h8V3h1v8h8v1z"></path></svg>
+                <span style="margin-left:6px; font-weight:500; font-size:15px; color:#fff;">Create</span>
+            </button>
+            <button class="notif-btn" title="Notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 24px; height: 24px;"><path clip-rule="evenodd" d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z" fill-rule="evenodd"></path></svg>
+            </button>
+            <button class="user-avatar" title="Profile" style="padding:0; background:none; border:none;">
+                <img src="assets/pfp.jpg" alt="Profile" style="width:32px; height:32px; border-radius:50%; object-fit:cover; display:block;" />
+            </button>
+        </div>
+    </header>
+    <main class="yt-main">
+        <section class="video-section">
+            <div class="video-player">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/7PIji8OubXU?si=ZwuKFneYL8SZ3hQb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h1 class="video-title">A youtube upgrade | Focus Mode</h1>
+            <div class="video-meta">
+                <div class="channel-info">
+                    <div class="channel-avatar">
+                        <img src="assets/pfp.jpg" alt="Channel Avatar" class="channel-avatar-img" />
+                    </div>
+                    <div class="channel-meta">
+                        <div class="channel-name">Shubham Gupta</div>
+                        <div class="subscribers">14M subscribers</div>
+                    </div>
+                    <button class="join-btn">Join</button>
+                    <button class="subscribe-btn">Subscribe</button>
+                    <div class="channel-actions">
+                        <div class="like-dislike-group">
+                            <button class="like-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff"><path d="M8,11 C8,11 3,11 3,11 C3,11 3,21 3,21 C3,21 8,21 8,21 C8,21 8,11 8,11z M18.77,11 C18.77,11 14.54,11 14.54,11 C14.54,11 16.06,6.06 16.06,6.06 C16.38,5.03 15.54,4 14.38,4 C13.8,4 13.24,4.24 12.86,4.65 C12.86,4.65 7,11 7,11 C7,11 7,21 7,21 C7,21 17.43,21 17.43,21 C18.49,21 19.41,20.33 19.62,19.39 C19.62,19.39 20.96,13.39 20.96,13.39 C21.23,12.15 20.18,11 18.77,11z M7,20 C7,20 4,20 4,20 C4,20 4,12 4,12 C4,12 7,12 7,12 C7,12 7,20 7,20z M19.98,13.17 C19.98,13.17 18.64,19.17 18.64,19.17 C18.54,19.65 18.03,20 17.43,20 C17.43,20 8,20 8,20 C8,20 8,11.39 8,11.39 C8,11.39 13.6,5.33 13.6,5.33 C13.79,5.12 14.08,5 14.38,5 C14.64,5 14.88,5.11 15.01,5.3 C15.08,5.4 15.16,5.56 15.1,5.77 C15.1,5.77 13.58,10.71 13.58,10.71 C13.58,10.71 13.18,12 13.18,12 C13.18,12 14.53,12 14.53,12 C14.53,12 18.76,12 18.76,12 C19.17,12 19.56,12.17 19.79,12.46 C19.92,12.61 20.05,12.86 19.98,13.17z"/></svg>
+                                <span>196K</span>
+                            </button>
+                            <div class="like-dislike-sep"></div>
+                            <button class="dislike-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#fff"><path d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z"></path></svg>
+                            </button>
+                        </div>
+                        <button class="share-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#fff"><path d="M15 5.63 20.66 12 15 18.37V14h-1c-3.96 0-7.14 1-9.75 3.09 1.84-4.07 5.11-6.4 9.89-7.1l.86-.13V5.63M14 3v6C6.22 10.13 3.11 15.33 2 21c2.78-3.97 6.44-6 12-6v6l8-9-8-9z"></path></svg>
+                            <span>Share</span>
+                        </button>
+                        <button class="channel-menu-btn" aria-label="More options">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="video-description-box">
+                    <div class="video-description-meta">
+                        <span class="video-description-views">51M views</span>
+                        <span class="video-description-dot">•</span>
+                        <span class="video-description-age">1 year ago</span>
+                        <span class="video-description-dot">•</span>
+                        <span class="video-description-tags">8K HDR VIDEOS</span>
+                    </div>
+                    <div class="video-description-text">
+                        High Quality Real 12K HDR VIDEO ULTRA HD 240FPS 120FPS 60FPS Dolby Vision, For Your 8K / 12K TV - Apple XDR Display, Samsung QLED TV, LG OLED TV, Sony Bravia TV, iPhone, Huawei, Xiaomi, Asus Phone and your other 8K / 12K HDR Devices. <span class="video-description-more">...more</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <aside class="sidebar">
+            <div class="ad-container">
+                <div class="ad-banner">
+                    <img src="assets/banner.png" alt="Banner" class="ad-banner-img" />
+                    <div class="ad-banner-bottom">
+                        <img src="assets/pfp.jpg" alt="Ad Profile" class="ad-profile-pic" />
+                        <div class="ad-banner-info">
+                            <div class="ad-banner-text">Please let me have the 1st prize</div>
+                            <div class="ad-sponsored"><b>Sponsored</b> · outlier.ai</div>
+                        </div>
+                        <button class="ad-visit-btn">Visit</button>
+                        <button class="ad-menu-btn" aria-label="More options">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-bar-wrapper">
+                    <button class="filter-scroll-btn" id="filterScrollLeftBtn" aria-label="Scroll left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M14 7l-5 5 5 5V7z"/></svg>
+                    </button>
+                    <div class="filter-bar" id="filterBar">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">From your search</button>
+                        <button class="filter-btn">From 8K Earth</button>
+                        <button class="filter-btn">Dolby Vision</button>
+                        <button class="filter-btn">Recently uploaded</button>
+                        <button class="filter-btn">Watched</button>
+                        <button class="filter-btn">4K</button>
+                        <button class="filter-btn">Live</button>
+                        <button class="filter-btn">Music</button>
+                        <button class="filter-btn">Gaming</button>
+                    </div>
+                    <button class="filter-scroll-btn" id="filterScrollBtn" aria-label="Scroll right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M10 17l5-5-5-5v10z"/></svg>
+                    </button> 
+                </div>
+                <!-- Shorts Section Start -->
+                <div class="shorts-section">
+                    <div class="shorts-header">
+                        <span class="shorts-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 24px; height: 24px;">
+                              <path d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z" fill="#f03"></path>
+                              <path d="m10,15l5-3-5-3v6Z" fill="#fff"></path>
+                            </svg>
+                        </span>
+                        <span class="shorts-title">Shorts</span>
+                    </div>
+                    <div class="shorts-list-wrapper">
+                        <button class="shorts-scroll-btn" id="shortsScrollLeftBtn" aria-label="Scroll left" style="left:6px; right:auto; display:none; position:absolute;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="12" r="12" fill="#232323"/><path d="M14 7l-5 5 5 5V7z" fill="#fff"/></svg>
+                        </button>
+                        <div class="shorts-list" id="shortsList">
+                            <div class="shorts-card">
+                                <img src="assets/shorts1.png" alt="Shorts 1" class="shorts-thumb" />
+                                <div class="shorts-card-bottom">
+                                    <div class="shorts-card-info">
+                                        <div class="shorts-card-title">The Loudest Sound In T...</div>
+                                        <div class="shorts-card-views">33M views</div>
+                                    </div>
+                                    <button class="shorts-card-menu" aria-label="More options">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="shorts-card">
+                                <img src="assets/shorts2.png" alt="Shorts 2" class="shorts-thumb" />
+                                <div class="shorts-card-bottom">
+                                    <div class="shorts-card-info">
+                                        <div class="shorts-card-title">Based on your ideas!</div>
+                                        <div class="shorts-card-views">2.3M views</div>
+                                    </div>
+                                    <button class="shorts-card-menu" aria-label="More options">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="shorts-card">
+                                <img src="assets/shorts3.png" alt="Shorts 3" class="shorts-thumb" />
+                                <div class="shorts-card-bottom">
+                                    <div class="shorts-card-info">
+                                        <div class="shorts-card-title">World's Highest Gea...</div>
+                                        <div class="shorts-card-views">28M views</div>
+                                    </div>
+                                    <button class="shorts-card-menu" aria-label="More options">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="shorts-card">
+                                <img src="assets/shorts4.png" alt="Shorts 4" class="shorts-thumb" />
+                                <div class="shorts-card-bottom">
+                                    <div class="shorts-card-info">
+                                        <div class="shorts-card-title">Unbelievable Trick!</div>
+                                        <div class="shorts-card-views">8M views</div>
+                                    </div>
+                                    <button class="shorts-card-menu" aria-label="More options">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="shorts-card">
+                                <img src="assets/shorts5.png" alt="Shorts 5" class="shorts-thumb" />
+                                <div class="shorts-card-bottom">
+                                    <div class="shorts-card-info">
+                                        <div class="shorts-card-title">How Fast Can You Go?</div>
+                                        <div class="shorts-card-views">12M views</div>
+                                    </div>
+                                    <button class="shorts-card-menu" aria-label="More options">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="shorts-scroll-btn" id="shortsScrollBtn" aria-label="Scroll right">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="12" r="12" fill="#232323"/><path d="M10 17l5-5-5-5v10z" fill="#fff"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Shorts Section End -->
+            </div>
+        </aside>
+    </main>
+</body>
+<script>
+const filterBar = document.getElementById('filterBar');
+const scrollLeftBtn = document.getElementById('filterScrollLeftBtn');
+const scrollRightBtn = document.getElementById('filterScrollBtn');
+
+function updateFilterScrollButtons() {
+    // Show left button only if scrolled right
+    if (filterBar.scrollLeft > 0) {
+        scrollLeftBtn.classList.remove('hide');
+    } else {
+        scrollLeftBtn.classList.add('hide');
+    }
+    // Show right button only if not fully scrolled right
+    if (filterBar.scrollWidth - filterBar.clientWidth - filterBar.scrollLeft > 2) {
+        scrollRightBtn.classList.remove('hide');
+    } else {
+        scrollRightBtn.classList.add('hide');
+    }
+}
+
+scrollRightBtn.onclick = function() {
+    filterBar.scrollBy({ left: 120, behavior: 'smooth' });
+};
+scrollLeftBtn.onclick = function() {
+    filterBar.scrollBy({ left: -120, behavior: 'smooth' });
+};
+filterBar.addEventListener('scroll', updateFilterScrollButtons);
+// Also update after scroll animation
+filterBar.addEventListener('wheel', updateFilterScrollButtons);
+// Initial check
+updateFilterScrollButtons();
+
+// Shorts scroll logic
+const shortsList = document.getElementById('shortsList');
+const shortsScrollBtn = document.getElementById('shortsScrollBtn');
+const shortsScrollLeftBtn = document.getElementById('shortsScrollLeftBtn');
+
+function updateShortsScrollBtn() {
+    if (!shortsList) return;
+    // Show right button only if not fully scrolled right
+    if (shortsList.scrollWidth - shortsList.clientWidth - shortsList.scrollLeft > 2) {
+        shortsScrollBtn.style.display = '';
+    } else {
+        shortsScrollBtn.style.display = 'none';
+    }
+    // Show left button only if scrolled right
+    if (shortsList.scrollLeft > 2) {
+        shortsScrollLeftBtn.style.display = '';
+    } else {
+        shortsScrollLeftBtn.style.display = 'none';
+    }
+}
+if (shortsScrollBtn && shortsList && shortsScrollLeftBtn) {
+    shortsScrollBtn.onclick = function() {
+        shortsList.scrollBy({ left: 120, behavior: 'smooth' });
+    };
+    shortsScrollLeftBtn.onclick = function() {
+        shortsList.scrollBy({ left: -120, behavior: 'smooth' });
+    };
+    shortsList.addEventListener('scroll', updateShortsScrollBtn);
+    shortsList.addEventListener('wheel', updateShortsScrollBtn);
+    // Initial check
+    updateShortsScrollBtn();
+}
+</script>
+</html>
